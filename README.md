@@ -47,7 +47,8 @@ streamlit run app.py
 ```
 -Enter User ID from 1 to 6039
 -Choose time of the day/week, and genres
---Choose Top-N Recommendation
+-Choose Top-N Recommendation
+
 4. Train your own model
 Download the MovieLens 1M dataset in the link above and run the script 
 ```bash
