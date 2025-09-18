@@ -37,7 +37,7 @@ cd movie-recommender
 ```
 ### 2. Create environment
 ```bash
-conda create -n movie_rec python=3.10
+conda create -n movie_rec python=3.10.18
 conda activate movie_rec
 pip install -r requirements.txt
 ```
