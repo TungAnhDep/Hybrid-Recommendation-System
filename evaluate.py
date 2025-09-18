@@ -31,14 +31,14 @@ def evaluate(model, dataloader, criterion, device, splitter):
 
     epoch_loss = running_loss / len(dataloader.dataset)
 
-    # Chuyển về numpy
+    # numpy
     all_labels, all_preds = np.array(all_labels), np.array(all_preds)
 
-    # === Inverse về thang đo gốc ===
+    # === Inverse Rating===
     inv_labels = splitter.inverse_ratings(all_labels)
     inv_preds  = splitter.inverse_ratings(all_preds)
 
-    # Đánh giá trên thang đo gốc
+    
     rmse = (root_mean_squared_error(inv_labels, inv_preds))
     mae  = mean_absolute_error(inv_labels, inv_preds)
 
