@@ -50,6 +50,7 @@ streamlit run app.py
 -Choose Top-N Recommendation
 
 4. Train your own model
+
 Download the MovieLens 1M dataset in the link above and run the script 
 ```bash
 python train.py
