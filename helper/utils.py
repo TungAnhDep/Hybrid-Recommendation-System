@@ -4,17 +4,7 @@ from src.data.dataset import MovieLensDataset
 from src.data.preprocess import Preprocessor
 
 def load_recommender_model(model_path="hybrid_model.pth", embedding_size=32, ctx_size=2, device=None):
-    """
-    Load MovieLens data, preprocess, encode genres, and return the model ready for inference.
-    
-    Returns:
-        final_products: DataFrame với one-hot genres
-        users: DataFrame thông tin user
-        context: DataFrame thông tin context
-        device: torch.device
-        model: HybridRecommender loaded with weights
-        features: list of genre columns
-    """
+
     # 1. Load dataset
     dataset = MovieLensDataset()
     movies, ratings = dataset.load()
